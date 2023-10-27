@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown</title>
+    <style>
+        body{
+            display: flex;
+            background-color: wheat;
+        }
+         h1{
+           padding: 80px 80px;
+           margin-top: 180px;
+           margin-left: 150px;
+           text-align: center;
+           font-size: 60;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+         }
+         #btn1{
+            height: 40px;
+            border-radius: 30px;
+            width: 300px;
+            justify-content: center;
+            padding: 80px 80px;
+           margin-top: 180px;
+           margin-left: 150px;
+           background-color: green;
+          color:white;
+        font-size: 30;
+         }
+    </style>
+</head>
+<body>
+    <h1>0 : </h1>
+    <button id="btn1" onclick="fun()"> start</button>
+
+
+
+
+    <script>
+
+        var result=document.querySelector("h1")
+        var i=1
+        var j=0
+        function fun()
+        {
+            result.innerHTML= j+ ":" + i
+            i++
+            if(i==1)
+            {
+                i=1
+                j=j+1
+            }
+        }
+
+
+    </script>
+</body>
+</html>
