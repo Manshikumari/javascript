@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settime</title>
+</head>
+<body>
+    <h2></h2>
+    <button onclick="fun()" id="btn">stop</button>
+    <script>
+          var i=1
+          var j=0
+          var id=setInterval(function clock()
+          {
+             document.querySelector("h2").innerHTML=j+":" +i
+             i++
+             j=j+1
+          }
+          )
+          {
+            setInterval( clock,0.5)
+          }
+          function fun()
+          {
+            clearInterval(id)
+          }
+    </script>
+    
+</body>
+</html>
